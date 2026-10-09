@@ -1,0 +1,17 @@
+---
+description: Use Yarn Classic only for project dependency management
+alwaysApply: true
+---
+
+# Yarn only
+
+This project uses **Yarn Classic** (`yarn.lock` v1). Do not use npm for project dependencies.
+
+- Install / sync: `yarn` or `yarn install`
+- Add: `yarn add <pkg>` (dev: `yarn add -D <pkg>`)
+- Remove: `yarn remove <pkg>`
+- Never run `npm install`, `npm i`, `npm uninstall`, `npm add`, or use `npx` to install project deps
+- Never create or commit `package-lock.json` / `npm-shrinkwrap.json`
+- When dependencies change, update and commit `yarn.lock` with `package.json`
+
+`npx` for one-off tool runners configured in MCP (e.g. Playwright MCP) is fine; it is not for managing this repo’s dependencies.

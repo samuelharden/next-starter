@@ -1,0 +1,13 @@
+---
+description: Include commit messages in brief summaries when committing
+alwaysApply: true
+---
+
+# Commit Summary
+
+When the user asks you to commit (stage, commit, commit-and-push, or similar):
+
+- After completing the commit, include the **exact commit message** in your brief summary.
+- Format: show the commit hash and the full message, e.g. `a1b2c3d Add hero section for tablet/desktop`.
+- If multiple commits are created in one request, list each hash and message.
+- Keep the rest of the summary brief; the commit message should be easy to spot.

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 72" fill="none" role="img" aria-label="Starter">
+  <rect width="64" height="64" y="4" rx="16" fill="#0F766E"/>
+  <path fill="#F8FAFC" d="M18 48V24h12.2c7.1 0 11.6 3.5 11.6 9.1 0 3.6-1.9 6.4-5.1 7.8L44 48h-9.2l-6.8-7.2H26.5V48H18zm8.5-15.2v4.8h2.2c2.7 0 4.2-1.2 4.2-2.5s-1.5-2.3-4.1-2.3h-2.3z"/>
+  <text x="88" y="50" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" letter-spacing="0.04em">STARTER</text>
+</svg>

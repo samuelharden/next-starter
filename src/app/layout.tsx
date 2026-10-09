@@ -1,4 +1,5 @@
 import React from 'react';
+import { Inter } from 'next/font/google';
 import localFont from 'next/font/local';
 import type { Metadata } from 'next';
 import './globals.css';
@@ -34,6 +35,12 @@ export const metadata: Metadata = {
   },
 };
 
+const inter = Inter({
+  subsets: ['latin', 'latin-ext'],
+  variable: '--font-inter',
+  display: 'swap',
+});
+
 const unboundedVariable = localFont({
   src: './../../public/fonts/unbounded-variable-wght.woff2',
   variable: '--font-variable',
@@ -49,7 +56,7 @@ export default function RootLayout({
   return (
     <html
       lang="de-AT"
-      className={cn(unboundedVariable.variable, 'font-sans')}
+      className={cn(inter.variable, unboundedVariable.variable, 'font-sans')}
       suppressHydrationWarning
     >
       <body

@@ -71,7 +71,9 @@ Starter ships a light paper + ink + slate-teal kit look. Swap tokens in [`src/ap
 }
 ```
 
-Headings use Unbounded (SIL Open Font License) from [`src/app/layout.tsx`](src/app/layout.tsx) and `public/fonts/`. Body text uses the system sans stack.
+Headings use Unbounded (SIL Open Font License) from [`src/app/layout.tsx`](src/app/layout.tsx) and `public/fonts/`.
+
+Body text is Inter via `next/font/google`. That is only a stand-in. Before you ship, replace it with a self-hosted file in `public/fonts/` and load it with `next/font/local`, the same way Unbounded is wired. Do not leave a Google Fonts dependency in a client project.
 
 ## 🔐 Environment
 

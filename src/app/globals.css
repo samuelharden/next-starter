@@ -5,7 +5,6 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-sans: ui-sans-serif, system-ui, sans-serif;
   --font-variable: var(--font-variable), sans-serif;
   --animate-marquee: marquee-scroll 35s linear infinite;
 }
@@ -99,6 +98,7 @@ body {
 }
 
 @theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-variable), sans-serif;
   --color-brand: var(--brand);
   --color-brand-foreground: var(--brand-foreground);
